@@ -1,10 +1,23 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Presetacion</router-link> |
+    <router-link to="/about">Proyectos</router-link> |
+    <router-link to="/Post">Post</router-link>
   </nav>
+  <NavComp />
   <router-view/>
+  
 </template>
+
+<script>
+ import NavComp from '@/components/NavComp.vue';
+ export default{
+    name: "App",
+    components: {
+      NavComp
+    }
+  }
+</script>
 
 <style>
 #app {
@@ -27,4 +40,6 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+
 </style>
