@@ -1,10 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Presetacion</router-link> |
-    <router-link to="/about">Proyectos</router-link> |
-    <router-link to="/Post">Post</router-link>
-  </nav>
-  <NavComp />
+   <NavComp />
+
+
   <router-view/>
   
 </template>
@@ -26,9 +23,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+ 
 }
 
-nav {
+/* nav {
   padding: 30px;
 }
 
@@ -36,10 +34,15 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
 }
+nav.router-link{
+  color: aliceblue;
+}
 
 nav a.router-link-exact-active {
   color: #42b983;
 }
-
+body {
+   /* Cambia #f0f0f0 por el color que desees */
+  
 
 </style>
